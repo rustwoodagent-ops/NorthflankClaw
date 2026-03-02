@@ -1,0 +1,191 @@
+{
+  "apiVersion": "v1.2",
+  "spec": {
+    "kind": "Workflow",
+    "spec": {
+      "type": "sequential",
+      "steps": [
+        {
+          "kind": "Project",
+          "ref": "openclaw",
+          "spec": {
+            "name": "OpenClaw",
+            "color": "#6F2DBD",
+            "networking": {
+              "tailscale": {
+                "authKeyTags": [],
+                "enabled": false
+              }
+            },
+            "region": "europe-west"
+          }
+        },
+        {
+          "kind": "Workflow",
+          "spec": {
+            "type": "sequential",
+            "context": {
+              "projectId": "${refs.openclaw.id}"
+            },
+            "steps": [
+              {
+                "kind": "SecretGroup",
+                "spec": {
+                  "type": "secret",
+                  "secretType": "environment-arguments",
+                  "priority": 10,
+                  "secrets": {
+                    "variables": {
+                      "SETUP_PASSWORD": "${args.SETUP_PASSWORD}",
+                      "OPENCLAW_STATE_DIR": "/data/.openclaw",
+                      "OPENCLAW_WORKSPACE_DIR": "/data/workspace",
+                      "OPENCLAW_GATEWAY_TOKEN": "${fn.randomSecret(32)}"
+                    },
+                    "files": {},
+                    "dockerSecretMounts": {}
+                  },
+                  "addonDependencies": [],
+                  "name": "OpenClaw Secrets",
+                  "restrictions": {
+                    "restricted": false,
+                    "nfObjects": [],
+                    "tags": []
+                  }
+                },
+                "ref": "openclaw-secrets"
+              },
+              {
+                "kind": "CombinedService",
+                "ref": "openclaw-service",
+                "spec": {
+                  "deployment": {
+                    "instances": 1,
+                    "storage": {
+                      "ephemeralStorage": {
+                        "storageSize": 1024
+                      },
+                      "shmSize": 64
+                    },
+                    "docker": {
+                      "configType": "default"
+                    }
+                  },
+                  "loadBalancing": {
+                    "mode": "leastConnection"
+                  },
+                  "buildSettings": {
+                    "storage": {
+                      "ephemeralStorage": {
+                        "storageSize": 16384
+                      }
+                    },
+                    "dockerfile": {
+                      "buildEngine": "buildkit",
+                      "dockerWorkDir": "/",
+                      "dockerFilePath": "/Dockerfile",
+                      "buildkit": {
+                        "useCache": false,
+                        "cacheStorageSize": 16384
+                      }
+                    }
+                  },
+                  "billing": {
+                    "deploymentPlan": "nf-compute-100-4",
+                    "buildPlan": "nf-compute-400-16"
+                  },
+                  "vcsData": {
+                    "projectUrl": "https://github.com/northflank-examples/clawdbot-northflank-template",
+                    "projectType": "github",
+                    "projectBranch": "main"
+                  },
+                  "runtimeEnvironment": {},
+                  "runtimeFiles": {},
+                  "buildArguments": {},
+                  "buildFiles": {},
+                  "dockerSecretMounts": {},
+                  "infrastructure": {
+                    "architecture": "x86"
+                  },
+                  "name": "OpenClaw Service",
+                  "ports": [
+                    {
+                      "internalPort": 8080,
+                      "protocol": "HTTP",
+                      "name": "p01",
+                      "public": true,
+                      "domains": [],
+                      "security": {
+                        "policies": [],
+                        "credentials": []
+                      },
+                      "disableNfDomain": false
+                    }
+                  ],
+                  "disabledCI": false,
+                  "buildConfiguration": {
+                    "pathIgnoreRules": [],
+                    "isAllowList": false,
+                    "ciIgnoreFlagsEnabled": false
+                  },
+                  "healthChecks": [
+                    {
+                      "type": "startupProbe",
+                      "protocol": "HTTP",
+                      "path": "/healthz",
+                      "port": 8080,
+                      "initialDelaySeconds": 5,
+                      "periodSeconds": 60,
+                      "timeoutSeconds": 10,
+                      "failureThreshold": 3
+                    }
+                  ]
+                }
+              },
+              {
+                "kind": "Volume",
+                "spec": {
+                  "spec": {
+                    "accessMode": "ReadWriteOnce",
+                    "storageSize": 10240,
+                    "storageClassName": "nvme"
+                  },
+                  "mounts": [
+                    {
+                      "containerMountPath": "/data",
+                      "volumeMountPath": ""
+                    }
+                  ],
+                  "name": "OpenClaw Volume",
+                  "attachedObjects": [
+                    {
+                      "id": "${refs.openclaw-service.id}",
+                      "type": "service"
+                    }
+                  ]
+                },
+                "ref": "openclaw-volume"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {
+    "SETUP_PASSWORD": ""
+  },
+  "name": "OpenClaw Template",
+  "description": "Clears your inbox, sends emails, manages your calendar, checks you in for flights.\nAll from WhatsApp, Telegram, or any chat app you already use.",
+  "options": {
+    "autorun": false,
+    "concurrencyPolicy": "allow"
+  },
+  "gitops": {
+    "repoUrl": "https://github.com/rustwoodagent-ops/NorthflankClaw",
+    "vcsService": "github",
+    "accountLogin": "rustwoodagent-ops",
+    "branch": "main",
+    "filePath": "/northflank.json"
+  },
+  "$schema": "https://api.northflank.com/v1/schemas/template"
+}
