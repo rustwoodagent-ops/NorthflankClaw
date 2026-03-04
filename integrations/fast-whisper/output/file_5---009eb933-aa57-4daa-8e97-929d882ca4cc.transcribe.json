@@ -1,0 +1,184 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/file_5---009eb933-aa57-4daa-8e97-929d882ca4cc.mp3",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9943588376045227,
+  "duration": 182.3146875,
+  "segments": [
+    {
+      "start": 10.83,
+      "end": 13.83,
+      "text": "Headlights hum like a hymn in the rain"
+    },
+    {
+      "start": 13.83,
+      "end": 20.59,
+      "text": "I got a map with a burn on the corner and a pocket full of apologies"
+    },
+    {
+      "start": 20.59,
+      "end": 25.59,
+      "text": "A rusted ring and a dead man's number still calling me in my sleep"
+    },
+    {
+      "start": 25.59,
+      "end": 30.59,
+      "text": "You said, baby, you don't need saving"
+    },
+    {
+      "start": 30.59,
+      "end": 33.59,
+      "text": "I said, I know, but I still pretend"
+    },
+    {
+      "start": 33.59,
+      "end": 36.59,
+      "text": "Now I'm two lanes deep in the nowhere"
+    },
+    {
+      "start": 36.59,
+      "end": 38.59,
+      "text": "Now I'm two lanes deep in the nowhere"
+    },
+    {
+      "start": 38.59,
+      "end": 41.59,
+      "text": "With my shadow in the passenger seat again"
+    },
+    {
+      "start": 41.59,
+      "end": 44.59,
+      "text": "Every mile markers a warning sign"
+    },
+    {
+      "start": 44.59,
+      "end": 47.59,
+      "text": "Every radio song's a crime"
+    },
+    {
+      "start": 47.59,
+      "end": 50.59,
+      "text": "Cause it sounds like you, sounds like you"
+    },
+    {
+      "start": 52.59,
+      "end": 55.59,
+      "text": "I'm driving with a rally trap, hello"
+    },
+    {
+      "start": 55.59,
+      "end": 57.59,
+      "text": "Sparking like sin in the night"
+    },
+    {
+      "start": 57.59,
+      "end": 60.59,
+      "text": "Trying to outrun what I can't let go"
+    },
+    {
+      "start": 60.59,
+      "end": 62.59,
+      "text": "But your name's in the tan line"
+    },
+    {
+      "start": 62.59,
+      "end": 82.46,
+      "text": "There's a Bible in the glove box shaking"
+    },
+    {
+      "start": 82.46,
+      "end": 85.46,
+      "text": "Next to a switchblade and a dime"
+    },
+    {
+      "start": 85.46,
+      "end": 89.46,
+      "text": "Next to a switchblade and a dime"
+    },
+    {
+      "start": 89.46,
+      "end": 92.46,
+      "text": "I've been talking to God like a stranger"
+    },
+    {
+      "start": 92.46,
+      "end": 94.46,
+      "text": "Every Saturday closing time"
+    },
+    {
+      "start": 94.46,
+      "end": 98.46,
+      "text": "Your laugh was a match in the dark room"
+    },
+    {
+      "start": 98.46,
+      "end": 103.38,
+      "text": "Lid up things I don't show"
+    },
+    {
+      "start": 103.38,
+      "end": 106.38,
+      "text": "Now I'm mashed on the tongue of a hard truth"
+    },
+    {
+      "start": 106.38,
+      "end": 109.38,
+      "text": "And the wind won't let me go"
+    },
+    {
+      "start": 109.38,
+      "end": 113.84,
+      "text": "Three back roads, a broken vow"
+    },
+    {
+      "start": 113.84,
+      "end": 116.84,
+      "text": "Every I'm fine is a blackout now"
+    },
+    {
+      "start": 116.84,
+      "end": 119.84,
+      "text": "When it comes to you, comes to you"
+    },
+    {
+      "start": 119.84,
+      "end": 124.73,
+      "text": "I'm driving with a rally trap, hello"
+    },
+    {
+      "start": 124.73,
+      "end": 127.73,
+      "text": "Sparking like sin in the night"
+    },
+    {
+      "start": 127.73,
+      "end": 130.73,
+      "text": "Trying to outrun what I can't let go"
+    },
+    {
+      "start": 130.73,
+      "end": 151.16,
+      "text": "But your name's in the tan line"
+    },
+    {
+      "start": 151.16,
+      "end": 153.16,
+      "text": "It's not the same, maybe I'm just a man"
+    },
+    {
+      "start": 153.16,
+      "end": 155.16,
+      "text": "With a heart that won't stay in place"
+    },
+    {
+      "start": 155.16,
+      "end": 157.16,
+      "text": "If you ever miss me, don't it, it'll only make it worse"
+    },
+    {
+      "start": 157.16,
+      "end": 159.16,
+      "text": "Cause I'll turn this truck around and put us back"
+    }
+  ]
+}

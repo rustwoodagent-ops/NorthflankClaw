@@ -1,0 +1,24 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/28c64203-2201-466b-8379-7e8e5bf0145b.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9706567525863647,
+  "duration": 13.2935,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 7.0,
+      "text": "What would be great, Howard, is if I sent you a message via audio, you can translate it,"
+    },
+    {
+      "start": 7.0,
+      "end": 10.0,
+      "text": "and then you can actually send me back a voice message."
+    },
+    {
+      "start": 10.0,
+      "end": 12.0,
+      "text": "Is this a task that you could implement?"
+    }
+  ]
+}

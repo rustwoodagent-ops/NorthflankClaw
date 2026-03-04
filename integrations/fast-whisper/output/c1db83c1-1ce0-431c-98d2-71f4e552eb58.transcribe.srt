@@ -1,0 +1,4 @@
+1
+00:00:00,530 --> 00:00:08,689
+If I change models in WhatsApp does that change the overall model or only what's in WhatsApp?
+

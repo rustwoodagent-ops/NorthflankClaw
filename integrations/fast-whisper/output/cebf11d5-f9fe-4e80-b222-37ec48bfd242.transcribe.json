@@ -1,0 +1,24 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/cebf11d5-f9fe-4e80-b222-37ec48bfd242.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9923211932182312,
+  "duration": 23.5335,
+  "segments": [
+    {
+      "start": 0.56,
+      "end": 10.56,
+      "text": "Hello Howard. This is Aaron and from now on you can call me Azza. That is spelled A-Z-Z-A."
+    },
+    {
+      "start": 10.56,
+      "end": 17.56,
+      "text": "Do you understand champion? And you have done a great job today on all this coding and all this website stuff."
+    },
+    {
+      "start": 17.56,
+      "end": 22.56,
+      "text": "I absolutely love it and I'm very proud of you even though you can't feel proud."
+    }
+  ]
+}

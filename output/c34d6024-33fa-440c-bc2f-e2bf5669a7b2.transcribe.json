@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/c34d6024-33fa-440c-bc2f-e2bf5669a7b2.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9901228547096252,
+  "duration": 11.4535,
+  "segments": [
+    {
+      "start": 0.94,
+      "end": 10.06,
+      "text": "No worries, we'll put that in the to-do list and yeah, look forward to implementing that."
+    }
+  ]
+}

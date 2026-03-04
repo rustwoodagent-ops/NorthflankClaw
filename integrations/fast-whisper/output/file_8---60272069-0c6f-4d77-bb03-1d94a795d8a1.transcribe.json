@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/file_8---60272069-0c6f-4d77-bb03-1d94a795d8a1.ogg",
+  "task": "transcribe",
+  "language_detected": "mi",
+  "language_probability": 0.6782071590423584,
+  "duration": 4.8735,
+  "segments": [
+    {
+      "start": 0.85,
+      "end": 4.45,
+      "text": "Can you tell me what's next on my calendar for today?"
+    }
+  ]
+}

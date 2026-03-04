@@ -1,0 +1,12 @@
+1
+00:00:00,110 --> 00:00:05,750
+Another question that I've got Howard is are you able to switch models on the fly?
+
+2
+00:00:05,750 --> 00:00:15,310
+I don't understand when I see in open core there's main colon main and it says
+
+3
+00:00:15,310 --> 00:00:20,550
+you can have agents and things but I'm not sure how to set it up.
+

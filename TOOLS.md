@@ -38,3 +38,8 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### TTS
+
+- Preferred ElevenLabs voice ID: `aGkVQvWUZi16EH8aZJvT` (Howard voice)
+- Reference: https://elevenlabs.io/app/speech-synthesis/text-to-speech

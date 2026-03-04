@@ -1,0 +1,19 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/df83663a-2c7c-4cd7-be7a-8ed989a5afb9.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9670379161834717,
+  "duration": 7.2935,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.56,
+      "text": "that repository to public soon when I get home. I'm just driving at the moment. Talk"
+    },
+    {
+      "start": 5.56,
+      "end": 6.68,
+      "text": "to you soon Howard."
+    }
+  ]
+}
