@@ -40,10 +40,13 @@
 | Operator OS | ✅ Live | 2026-03-17 | Hero + 3 support images verified |
 | Operator OS Thanks | ✅ Live | 2026-03-17 | Thank-you page for signups |
 | The Operator's Dilemma | ✅ Live | 2026-03-17 | Authority article supporting product |
-| AI Without Chaos | ⏳ Deploying | 2026-03-17 | Authority article, pushed |
+| AI Without Chaos | ✅ Live | 2026-03-17 | Authority article, verified HTTP 200 |
+| Anti-Hustle OS | ✅ Live | 2026-03-18 | Authority article, verified HTTP 200 |
 | Archive | ✅ Live | 2026-03-17 | CTA added, deploying |
 | Footer links | ✅ Live | 2026-03-17 | Operator OS link on all pages |
 | Contact | ✅ Live | — | Basic contact form |
+| Internal linking | ✅ Live | 2026-03-18 | Articles → Product page links |
+| Site directory | ✅ Updated | 2026-03-18 | Authority Content section added |
 | Storefront | ⛔ NOT LIVE | — | Blocked until TIER 1 ready |
 
 ---
