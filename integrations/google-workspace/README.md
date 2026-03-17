@@ -10,12 +10,14 @@ This folder wires one OAuth client for:
 
 ## Files
 
-- `secrets/client.json` — OAuth client (installed app)
-- `secrets/token.json` — OAuth token (generated after consent)
+- `secrets/client.json` — canonical OAuth client (installed app)
+- `secrets/token.json` — canonical OAuth token (generated after consent)
 - `scopes.json` — requested scopes
 - `scripts/auth-url.js` — generate consent URL
 - `scripts/exchange-code.js` — exchange auth code for token
-- `scripts/verify-access.js` — verify all APIs
+- `scripts/verify-access.js` — full verify of all APIs
+- `scripts/health-check.js` — fast non-writing health-check for Gmail + Drive
+- `GOOGLE_AUTH.md` — recovery + hardening notes
 
 ## Run
 
@@ -33,6 +35,7 @@ Then:
 
 ```bash
 npm run auth:token -- "<PASTE_CODE_OR_URL>"
+npm run health
 npm run verify
 ```
 
@@ -55,6 +58,12 @@ Run help:
 
 ```bash
 npm run run-google-task -- --help
+```
+
+Fast auth health-check:
+
+```bash
+npm run health
 ```
 
 ## Security

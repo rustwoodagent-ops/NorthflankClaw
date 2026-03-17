@@ -1,6 +1,6 @@
 # TOOLS.md
 
-- ElevenLabs voice (Howard): `aGkVQvWUZi16EH8aZJvT`
+- ElevenLabs voice (Howard): `IKne3meq5aSn9XLyUdCD`
 
 <!-- clawx:begin -->
 ## ClawX Tool Notes

@@ -7,6 +7,7 @@
     "auth:url": "node scripts/auth-url.js",
     "auth:token": "node scripts/exchange-code.js",
     "verify": "node scripts/verify-access.js",
+    "health": "node scripts/health-check.js",
     "run-google-task": "node scripts/run-google-task.js"
   },
   "dependencies": {

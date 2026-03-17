@@ -1,0 +1,116 @@
+version: "3.9"
+
+services:
+  # PostgreSQL
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: voxai
+      POSTGRES_PASSWORD: voxai_dev
+      POSTGRES_DB: voxai
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U voxai"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Redis (for BullMQ)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # Python audio worker
+  python-worker:
+    build:
+      context: ./apps/worker
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - AWS_REGION=${AWS_REGION}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_BUCKET=${S3_BUCKET}
+      - WHISPER_MODEL=base.en
+    volumes:
+      - ./apps/worker:/app
+      - worker_cache:/root/.cache
+    depends_on:
+      - redis
+
+  # Next.js web app
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://voxai:voxai_dev@postgres:5432/voxai
+      - REDIS_URL=redis://redis:6379
+      - PYTHON_WORKER_URL=http://python-worker:8001
+      - NEXTAUTH_URL=http://localhost:3000
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - RESEND_API_KEY=${RESEND_API_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_BUCKET=${S3_BUCKET}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+      - STRIPE_BASIC_PRICE_ID=${STRIPE_BASIC_PRICE_ID}
+      - STRIPE_PRO_PRICE_ID=${STRIPE_PRO_PRICE_ID}
+      - NEXT_PUBLIC_APP_URL=http://localhost:3000
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      python-worker:
+        condition: service_started
+
+  # BullMQ worker (Node.js)
+  queue-worker:
+    build:
+      context: ./apps/server
+      dockerfile: Dockerfile.dev
+    environment:
+      - DATABASE_URL=postgresql://voxai:voxai_dev@postgres:5432/voxai
+      - REDIS_URL=redis://redis:6379
+      - PYTHON_WORKER_URL=http://python-worker:8001
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_BUCKET=${S3_BUCKET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      python-worker:
+        condition: service_started
+
+volumes:
+  postgres_data:
+  redis_data:
+  worker_cache:
