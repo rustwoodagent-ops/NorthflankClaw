@@ -1,0 +1,14 @@
+{
+  "name": "howard-notion-integration",
+  "version": "1.0.0",
+  "description": "Notion integration for Howard Operator OS",
+  "main": "lib/notion.js",
+  "scripts": {
+    "setup": "node scripts/setup-notion-workspace.js",
+    "sync": "node scripts/sync-to-notion.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5"
+  }
+}
