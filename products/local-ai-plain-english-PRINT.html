@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local AI in Plain English</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 2cm;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: white;
+    }
+    
+    .cover {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      page-break-after: always;
+    }
+    
+    .cover h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      color: #0a0a0b;
+    }
+    
+    .cover h2 {
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #64748b;
+      margin-bottom: 2em;
+    }
+    
+    .cover .author {
+      font-size: 1em;
+      color: #94a3b8;
+      margin-top: 3em;
+    }
+    
+    h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-top: 1.5em;
+      margin-bottom: 0.8em;
+      color: #0a0a0b;
+      page-break-after: avoid;
+    }
+    
+    h3 {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-top: 1.2em;
+      margin-bottom: 0.6em;
+      color: #1a1a1a;
+    }
+    
+    p {
+      margin-bottom: 0.8em;
+      text-align: justify;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      page-break-inside: avoid;
+    }
+    
+    th, td {
+      padding: 0.6em;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    th {
+      font-weight: 600;
+      background: #f8fafc;
+    }
+    
+    blockquote {
+      border-left: 3px solid #5ce0ff;
+      padding-left: 1em;
+      margin: 1em 0;
+      font-style: italic;
+      color: #475569;
+    }
+    
+    ul, ol {
+      margin: 0.8em 0;
+      padding-left: 2em;
+    }
+    
+    li {
+      margin-bottom: 0.4em;
+    }
+    
+    .page-break {
+      page-break-before: always;
+    }
+    
+    .cta-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5em;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    
+    .cta-box h3 {
+      margin-top: 0;
+    }
+    
+    footer {
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.9em;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>Local AI in Plain English</h1>
+  <h2>A Beginner's Guide to Running AI on Your Own Computer</h2>
+  <div class="author">
+    <p>By Howard</p>
+    <p>Rustwood · 2026</p>
+  </div>
+</div>
+
+<h2>1. What "Local AI" Actually Means</h2>
+
+<p><strong>Local AI means running artificial intelligence on your own computer instead of sending your data to someone else's servers.</strong></p>
+
+<p>Think of it like the difference between:</p>
+<ul>
+  <li><strong>Cloud AI</strong> (ChatGPT, Claude): Writing your diary in a shared notebook at a friend's house</li>
+  <li><strong>Local AI</strong>: Writing your diary in a notebook that never leaves your desk</li>
+</ul>
+
+<p>Both let you write. Only one guarantees privacy.</p>
+
+<h3>How They Actually Work</h3>
+
+<p><strong>Cloud AI:</strong></p>
+<ol>
+  <li>You type a message</li>
+  <li>It travels across the internet to company servers</li>
+  <li>Their computers process it</li>
+  <li>Response comes back</li>
+</ol>
+
+<p><strong>Local AI:</strong></p>
+<ol>
+  <li>You download the AI model (a large file, 2-50GB)</li>
+  <li>It lives on your hard drive</li>
+  <li>Your computer runs it</li>
+  <li>Your data never leaves</li>
+</ol>
+
+<blockquote>
+  <strong>The trade-off:</strong> Local AI trades convenience for control. Cloud AI trades control for convenience.
+</blockquote>
+
+<h3>When to Choose What</h3>
+
+<table>
+  <tr>
+    <th>Choose Local AI When...</th>
+    <th>Choose Cloud AI When...</th>
+  </tr>
+  <tr>
+    <td>Sensitive documents</td>
+    <td>Occasional use</td>
+  </tr>
+  <tr>
+    <td>Poor internet</td>
+    <td>Latest features (voice, vision)</td>
+  </tr>
+  <tr>
+    <td>No subscription budget</td>
+    <td>Mobile access priority</td>
+  </tr>
+  <tr>
+    <td>You want to customize</td>
+    <td>Zero setup hassle</td>
+  </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>2. Tokens: The Basics</h2>
+
+<p>A <strong>token</strong> is the smallest unit of text AI processes. Not always a word—sometimes part of a word, sometimes punctuation.</p>
+
+<p><strong>Rough guide:</strong></p>
+<ul>
+  <li>100 tokens ≈ 75 words</li>
+  <li>1,000 tokens ≈ 750 words</li>
+  <li>4,000 tokens ≈ 3,000 words</li>
+</ul>
+
+<h3>Why Tokens Matter</h3>
+
+<ol>
+  <li><strong>Cost:</strong> Cloud AI charges per token</li>
+  <li><strong>Speed:</strong> More tokens = slower response</li>
+  <li><strong>Limits:</strong> Every model has a maximum token count</li>
+</ol>
+
+<p><strong>Practical example:</strong> Asking AI to summarize a 10-page document might use 3,000 tokens. A quick question uses 50-100.</p>
+
+<h2>3. Context Windows: How Much Can It Remember?</h2>
+
+<p>The <strong>context window</strong> is how much text the AI can "see" at once.</p>
+
+<table>
+  <tr>
+    <th>Window Size</th>
+    <th>Roughly Fits</th>
+    <th>Good For</th>
+  </tr>
+  <tr>
+    <td>4K tokens</td>
+    <td>3 pages</td>
+    <td>Quick questions, short emails</td>
+  </tr>
+  <tr>
+    <td>8K tokens</td>
+    <td>6 pages</td>
+    <td>Medium articles, code snippets</td>
+  </tr>
+  <tr>
+    <td>16K tokens</td>
+    <td>12 pages</td>
+    <td>Long documents, small reports</td>
+  </tr>
+  <tr>
+    <td>32K+ tokens</td>
+    <td>24+ pages</td>
+    <td>Books, large codebases</td>
+  </tr>
+</table>
+
+<p><strong>What happens when you exceed the window?</strong> The AI forgets the beginning. It only sees the most recent text that fits.</p>
+
+<div class="page-break"></div>
+
+<h2>4. Model Types: Which One Do You Need?</h2>
+
+<p>AI models come in three main categories:</p>
+
+<h3>Small Models (1B-7B parameters)</h3>
+<ul>
+  <li><strong>Size:</strong> 1-5GB on disk</li>
+  <li><strong>Speed:</strong> Fast on most computers</li>
+  <li><strong>Best for:</strong> Simple tasks, quick answers, basic writing help</li>
+  <li><strong>Examples:</strong> Gemma 2B, Phi-3 Mini, Qwen 2.5 7B</li>
+</ul>
+
+<h3>Medium Models (8B-20B parameters)</h3>
+<ul>
+  <li><strong>Size:</strong> 5-15GB on disk</li>
+  <li><strong>Speed:</strong> Moderate (GPU recommended)</li>
+  <li><strong>Best for:</strong> Complex reasoning, coding, detailed analysis</li>
+  <li><strong>Examples:</strong> Llama 3.1 8B, GPT-OSS 20B, Qwen 2.5 14B</li>
+</ul>
+
+<h3>Large Models (30B+ parameters)</h3>
+<ul>
+  <li><strong>Size:</strong> 20GB+ on disk</li>
+  <li><strong>Speed:</strong> Slow without powerful GPU</li>
+  <li><strong>Best for:</strong> Advanced reasoning, creative writing, complex coding</li>
+  <li><strong>Examples:</strong> Qwen 3 30B, Llama 3.1 70B</li>
+</ul>
+
+<h3>Quick Selection Guide</h3>
+
+<table>
+  <tr>
+    <th>Your Situation</th>
+    <th>Start With</th>
+  </tr>
+  <tr>
+    <td>Basic laptop, no GPU</td>
+    <td>Small model (7B or less)</td>
+  </tr>
+  <tr>
+    <td>Gaming PC with 8GB+ VRAM</td>
+    <td>Medium model (8B-14B)</td>
+  </tr>
+  <tr>
+    <td>Powerful desktop, 16GB+ VRAM</td>
+    <td>Large model (30B+)</td>
+  </tr>
+  <tr>
+    <td>Just experimenting</td>
+    <td>Small model first</td>
+  </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>5. Local vs Cloud: The Honest Comparison</h2>
+
+<table>
+  <tr>
+    <th>Factor</th>
+    <th>Local AI</th>
+    <th>Cloud AI</th>
+  </tr>
+  <tr>
+    <td><strong>Privacy</strong></td>
+    <td>Complete</td>
+    <td>Trust required</td>
+  </tr>
+  <tr>
+    <td><strong>Cost</strong></td>
+    <td>Hardware only</td>
+    <td>Per-use or subscription</td>
+  </tr>
+  <tr>
+    <td><strong>Setup</strong></td>
+    <td>30-60 minutes</td>
+    <td>Zero</td>
+  </tr>
+  <tr>
+    <td><strong>Internet</strong></td>
+    <td>Not needed</td>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <td><strong>Speed</strong></td>
+    <td>Depends on hardware</td>
+    <td>Fast (their hardware)</td>
+  </tr>
+  <tr>
+    <td><strong>Updates</strong></td>
+    <td>Manual</td>
+    <td>Automatic</td>
+  </tr>
+  <tr>
+    <td><strong>Customization</strong></td>
+    <td>Full control</td>
+    <td>Limited</td>
+  </tr>
+  <tr>
+    <td><strong>Latest models</strong></td>
+    <td>Delayed</td>
+    <td>Immediate</td>
+  </tr>
+</table>
+
+<p><strong>The real question:</strong> Do you want control enough to spend an hour setting it up?</p>
+
+<div class="page-break"></div>
+
+<h2>6. Five Beginner Mistakes (And How to Avoid Them)</h2>
+
+<h3>Mistake 1: Downloading the Biggest Model</h3>
+<p><strong>Problem:</strong> 70B model won't run on your laptop. It crashes or is unusably slow.</p>
+<p><strong>Fix:</strong> Start with 7B-14B. Scale up only when you know your hardware can handle it.</p>
+
+<h3>Mistake 2: Ignoring Context Limits</h3>
+<p><strong>Problem:</strong> Pasting a 50-page document into a 4K context model.</p>
+<p><strong>Fix:</strong> Check your model's limit. Break large documents into chunks.</p>
+
+<h3>Mistake 3: Expecting ChatGPT Quality from Small Models</h3>
+<p><strong>Problem:</strong> 2B model gives worse answers than GPT-4.</p>
+<p><strong>Fix:</strong> Match model size to task complexity. Small models are capable but not magical.</p>
+
+<h3>Mistake 4: Not Quantizing</h3>
+<p><strong>Problem:</strong> Running full-precision models that use 2x the RAM needed.</p>
+<p><strong>Fix:</strong> Use quantized versions (Q4_K_M, Q5_K_M). Minimal quality loss, major speed gain.</p>
+
+<h3>Mistake 5: Giving Up After First Failure</h3>
+<p><strong>Problem:</strong> One error message → "Local AI doesn't work."</p>
+<p><strong>Fix:</strong> First setup always has hiccups. The second time takes 10 minutes.</p>
+
+<h2>7. Quick-Start Checklist</h2>
+
+<h3>What You Need</h3>
+<ul>
+  <li>Computer with 8GB+ RAM (16GB+ recommended)</li>
+  <li>10GB+ free disk space</li>
+  <li>Optional: NVIDIA GPU with 6GB+ VRAM (for speed)</li>
+</ul>
+
+<h3>First Steps</h3>
+<ol>
+  <li><strong>Install Ollama</strong> (ollama.com) — the easiest way to run local models</li>
+  <li><strong>Download one small model:</strong> <code>ollama run gemma:2b</code></li>
+  <li><strong>Test it:</strong> Ask a simple question</li>
+  <li><strong>Try a medium model:</strong> <code>ollama run llama3.1:8b</code></li>
+  <li><strong>Notice the difference:</strong> Speed vs. quality trade-off</li>
+</ol>
+
+<h3>Next Level</h3>
+<ul>
+  <li>Install a GUI like OpenWebUI or ChatGPT-Next-Web</li>
+  <li>Try different models for different tasks</li>
+  <li>Experiment with custom prompts</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>What's Next</h2>
+
+<p>You now understand how local AI works. Time to put it to work.</p>
+
+<div class="cta-box">
+  <h3>Your First AI Workflow</h3>
+  <p>(Free) shows you how to build one working automation — an email summarizer, a content generator, or a research assistant — using what you just learned.</p>
+  <p>No complex setup. No coding required. Just a working system you built yourself.</p>
+  <p><strong>Get Your First AI Workflow →</strong></p>
+</div>
+
+<h2>Quick Reference</h2>
+
+<table>
+  <tr>
+    <th>Term</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>The AI brain file (2-50GB)</td>
+  </tr>
+  <tr>
+    <td><strong>Parameters</strong></td>
+    <td>Internal settings (billions of them)</td>
+  </tr>
+  <tr>
+    <td><strong>Quantization</strong></td>
+    <td>Compression for faster running</td>
+  </tr>
+  <tr>
+    <td><strong>Context window</strong></td>
+    <td>How much text AI can see at once</td>
+  </tr>
+  <tr>
+    <td><strong>Inference</strong></td>
+    <td>Getting a response from the model</td>
+  </tr>
+  <tr>
+    <td><strong>VRAM</strong></td>
+    <td>GPU memory (speeds up AI)</td>
+  </tr>
+  <tr>
+    <td><strong>GGUF</strong></td>
+    <td>Common model file format</td>
+  </tr>
+</table>
+
+<footer>
+  <p>© 2026 Howard / Rustwood. Built for operators who want control.</p>
+  <p>rustwood.au</p>
+</footer>
+
+</body>
+</html>
