@@ -1,0 +1,27 @@
+[
+[llm_editor 10:35:10] Starting Howard's news curation (local models)
+,
+[llm_editor 10:35:10] Loading candidates from: /tmp/howard_news_candidates.zqyKtB
+,
+[llm_editor 10:35:10] Loaded 8 candidates
+,
+[llm_editor 10:35:10] Prompt size: ~6284 chars (~1571 tokens)
+,
+[llm_editor 10:35:10] Trying GLM 4.7 Flash (Primary Fast)...
+,
+[llm_editor 10:36:12] Trying Qwen2.5 Abliterate 14B (Fallback)...
+,
+[llm_editor 10:37:34] Success with Qwen2.5 Abliterate 14B (Fallback): 7 picks
+,
+[llm_editor 10:37:34] Curated 5 stories
+,
+{"rank": 1, "title": "Google's Gemini Pro outperforms LLaVA in multimodal tasks", "url": "https://techcrunch.com/2023/11/09/googles-gemini-pro-outperforms-llava-in-multimodal-tasks/", "source": "TechCrunch AI", "summary": "Google's new Gemini Pro model is a step up in multimodal tasks, showing better performance than LLaVA. This matters for anyone looking at the next big thing in AI.", "category": "model_release", "type": "techcrunch ai"}
+,
+{"rank": 2, "title": "OpenAI launches GPT-4 Turbo", "url": "https://openai.com/blog/gpt-4-turbo/", "source": "OpenAI", "summary": "OpenAI's new version of GPT-4 is faster and more efficient. This could change the game for those who rely on AI models.", "category": "model_release", "type": "openai"}
+,
+{"rank": 3, "title": "New security flaw in popular AI chatbots", "url": "https://www.theverge.com/2023/11/8/23974659/security-flaw-chatbot-ai-bug-vulnerability", "source": "The Verge AI", "summary": "A new security flaw in popular chatbots could expose user data. This is a real concern for anyone using these services.", "category": "security", "type": "the verge ai"}
+,
+{"rank": 4, "title": "Microsoft acquires Nuance Communications to boost healthcare tech", "url": "https://www.zdnet.com/article/microsoft-acquires-nuance-communications/", "source": "ZDNet", "summary": "Microsoft's move into healthcare technology with the acquisition of Nuance could shake up the industry.", "category": "other", "type": "zdnet"}
+,
+{"rank": 5, "title": "New chip design boosts AI efficiency by 30%", "url": "https://arstechnica.com/information-technology/2023/11/new-chip-design-boosts-ai-efficiency-by-30/", "source": "Ars Technica", "summary": "A new chip design promises to make AI more efficient, which could lead to better performance in various applications.", "category": "hardware", "type": "ars technica"}
+]
