@@ -24,11 +24,14 @@ Public-Facing Build, Content, Creative Execution, and Agent Coordination Node
 
 ### Agent Delegation Queue
 
-| Agent | Current Task | Next Task | Status |
-|-------|--------------|-----------|--------|
-| Mercury | $19 product formatting | Email automation | Ready |
-| Jupiter | — | Specialist drafting | Available |
-| Jono | — | Howard support tasks | Available |
+| Agent | System | Current Task | Next Task | Status |
+|-------|--------|--------------|-----------|--------|
+| Jono | 1 | — | Howard support tasks | Available |
+| Mercury | 1 | $19 product formatting | Email automation | Ready |
+| Jupiter | 1 | — | Specialist drafting | Available |
+| Gary | 2 | — | Tenzo audit support | Available |
+| Mercury-2 | 2 | Tenzo audit tasks | Verification | Active |
+| Jupiter-2 | 2 | — | Specialist checks | Available |
 
 ## Blockers
 
@@ -49,9 +52,10 @@ Public-Facing Build, Content, Creative Execution, and Agent Coordination Node
 
 ## Delegation Log
 
-| Date | From | To | Task | Context Provided | Status |
-|------|------|-----|------|------------------|--------|
-| 2026-03-19 | Howard | Tenzo | Verify storefront live | 4 URLs to check | Pending |
+| Date | From | To | System | Task | Context Provided | Status |
+|------|------|-----|--------|------|------------------|--------|
+| 2026-03-19 | Howard | Mercury | 1 | $19 product formatting | Draft → sellable format | In Progress |
+| 2026-03-19 | Tenzo | Mercury-2 | 2 | Verify storefront live | 4 URLs to check | Pending |
 
 ## Next Actions
 
