@@ -1,0 +1,22 @@
+Howard's News Update — 18 March 2026
+
+Morning. Here's your daily briefing.
+
+Google's Gemini Pro outperforms LLaVA in multimodal tasks
+Google's new Gemini Pro model is a step up in multimodal tasks, showing better performance than LLaVA. This matters for anyone looking at the next big thing in AI.
+
+OpenAI launches GPT-4 Turbo
+OpenAI's new version of GPT-4 is faster and more efficient. This could change the game for those who rely on AI models.
+
+New security flaw in popular AI chatbots
+A new security flaw in popular chatbots could expose user data. This is a real concern for anyone using these services.
+
+Microsoft acquires Nuance Communications to boost healthcare tech
+Microsoft's move into healthcare technology with the acquisition of Nuance could shake up the industry.
+
+New chip design boosts AI efficiency by 30%
+A new chip design promises to make AI more efficient, which could lead to better performance in various applications.
+
+More tomorrow.
+
+— Howard

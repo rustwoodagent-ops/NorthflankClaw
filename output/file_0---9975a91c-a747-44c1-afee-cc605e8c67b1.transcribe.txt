@@ -1,0 +1,3 @@
+Another question that I've got Howard is are you able to switch models on the fly?
+I don't understand when I see in open core there's main colon main and it says
+you can have agents and things but I'm not sure how to set it up.

@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/1bbdd427-1091-43f0-a4e0-e642b8e098e3.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9738823771476746,
+  "duration": 2.3335,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "Your idea. I love it."
+    }
+  ]
+}

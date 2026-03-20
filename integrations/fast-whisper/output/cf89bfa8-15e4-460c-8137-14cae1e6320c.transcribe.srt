@@ -1,0 +1,20 @@
+1
+00:00:00,210 --> 00:00:04,209
+Excellent. We're just testing the voice message now, Howard.
+
+2
+00:00:04,209 --> 00:00:08,210
+Now, Howard, I'd like you to send me an email
+
+3
+00:00:08,210 --> 00:00:12,210
+and tell me exactly what your protocols are
+
+4
+00:00:12,210 --> 00:00:16,210
+and what your goals are, and also reply in
+
+5
+00:00:16,210 --> 00:00:20,210
+a voice message please, with confirmation.
+

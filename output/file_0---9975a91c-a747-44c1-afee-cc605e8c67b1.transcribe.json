@@ -1,0 +1,24 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/file_0---9975a91c-a747-44c1-afee-cc605e8c67b1.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9932575225830078,
+  "duration": 20.4135,
+  "segments": [
+    {
+      "start": 0.11,
+      "end": 5.75,
+      "text": "Another question that I've got Howard is are you able to switch models on the fly?"
+    },
+    {
+      "start": 5.75,
+      "end": 15.31,
+      "text": "I don't understand when I see in open core there's main colon main and it says"
+    },
+    {
+      "start": 15.31,
+      "end": 20.55,
+      "text": "you can have agents and things but I'm not sure how to set it up."
+    }
+  ]
+}

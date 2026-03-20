@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/414daf01-a0f6-4541-ab38-60f8f8a50e1f.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9854985475540161,
+  "duration": 11.8735,
+  "segments": [
+    {
+      "start": 0.62,
+      "end": 10.3,
+      "text": "So now how would I want you reply in your voice text go bingo bingo bingo bingo"
+    }
+  ]
+}

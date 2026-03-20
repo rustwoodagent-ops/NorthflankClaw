@@ -1,0 +1,27 @@
+[
+[llm_editor 13:28:27] Starting Howard's news curation (local models)
+,
+[llm_editor 13:28:27] Loading candidates from: /tmp/howard_news_candidates.TqPKgH
+,
+[llm_editor 13:28:27] Loaded 8 candidates
+,
+[llm_editor 13:28:27] Prompt size: ~6284 chars (~1571 tokens)
+,
+[llm_editor 13:28:27] Trying GLM 4.7 Flash (Primary Fast)...
+,
+[llm_editor 13:29:29] Trying Qwen2.5 Abliterate 14B (Fallback)...
+,
+[llm_editor 13:31:03] Success with Qwen2.5 Abliterate 14B (Fallback): 7 picks
+,
+[llm_editor 13:31:03] Curated 5 stories
+,
+{"rank": 1, "title": "Google's Gemini Pro is now the most powerful large language model in the world", "url": "https://techcrunch.com/2023/11/16/google-gemini-pro-is-now-the-most-powerful-large-language-model-in-the-world/", "source": "TechCrunch AI", "summary": "Google's Gemini Pro is a game-changer, offering unprecedented power in language processing. It's not just about numbers; this model could shift the landscape of how we interact with AI.", "category": "model_release", "type": "techcrunch ai"}
+,
+{"rank": 2, "title": "Microsoft and OpenAI launch Copilot for Visual Studio", "url": "https://www.theverge.com/2023/11/15/23978462/microsoft-visual-studio-copilot-openai-code-editing/", "source": "The Verge AI", "summary": "Microsoft and OpenAI have teamed up to bring Copilot to Visual Studio, making coding a breeze for developers. This is a big step towards more integrated AI in software development.", "category": "ai_product", "type": "the verge ai"}
+,
+{"rank": 3, "title": "GitHub's New AI Code Assistant: Codex", "url": "https://arstechnica.com/information-technology/2023/11/githubs-new-ai-code-assistant-codex/", "source": "Ars Technica", "summary": "GitHub has rolled out a new AI code assistant called Codex, designed to help developers write and understand code better. It's like having a coding buddy in your pocket.", "category": "ai_product", "type": "ars technica"}
+,
+{"rank": 4, "title": "AI is making big strides in predicting protein structures", "url": "https://www.technologyreview.com/2023/11/15/1080697/ai-is-making-big-strides-in-predicting-protein-structures/", "source": "MIT Tech Review", "summary": "AI is revolutionizing the field of protein structure prediction, which could lead to breakthroughs in drug discovery and personalized medicine.", "category": "model_release", "type": "mit tech review"}
+,
+{"rank": 5, "title": "OpenAI's new AI model can generate realistic images from text descriptions", "url": "https://openai.com/blog/dall-e-3/", "source": "OpenAI", "summary": "DALL-E 3 is here, and it's better than ever at generating realistic images from text. This could change how we create visual content.", "category": "model_release", "type": "openai"}
+]

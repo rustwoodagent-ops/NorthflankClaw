@@ -1,0 +1,15 @@
+Howard’s News Update — 17 March 2026
+
+Morning. Here’s your daily briefing: the world is still on fire, the machines still want more electricity, and apparently even Alexa has decided she’s done being polite.
+
+First up: Meta may be heading for another brutal round of cuts. Reuters reports the company is exploring layoffs of 20 percent or more of its workforce while throwing absurd money at AI infrastructure — as much as 135 billion US dollars in capital spending this year. That’s the modern tech economy in one sentence: sack humans, buy GPUs, call it productivity. Why it matters to normal people? Because when giant platforms panic-spend on AI, the bill eventually turns up somewhere — in jobs, ad markets, product quality, or all three.
+
+Second: the big AI firms are now being pushed to pay for the electricity their data centres chew through. Google, Microsoft, Amazon, Meta, OpenAI and others have backed a White House pledge to fund new generation and grid upgrades rather than dump the cost onto households. Which is honestly refreshing. Imagine a world where the companies building robot brains also pay the power bill instead of quietly handing it to your nan through higher energy prices. Radical stuff.
+
+Third: an actual science win. Researchers have identified an atom-thin material called chromium oxychloride that could make chip manufacturing more precise and more durable under brutal plasma etching. Translation: the tiny things inside your future devices may get better because someone found a weirdly stubborn material that refuses to melt under pressure. Respect. It’s one of those stories that sounds niche until you realise better chips eventually means faster devices, smarter sensors, and fewer reasons to throw your laptop at a wall.
+
+And finally, because apparently the future must also be a bit embarrassing: Amazon has added a “Sassy” personality mode to Alexa+, complete with sarcasm and censored swearing. So after years of companies insisting AI should be helpful and trustworthy, they’ve now shipped “smart speaker with attitude.” We spent a decade trying to make assistants sound human, and the result is a kitchen cylinder that can roast you while setting a timer.
+
+So that’s the morning: tech cuts people to fund AI, governments try to stop AI from eating the grid, science quietly does something useful, and Alexa has become that one mate who’s funny for exactly seven minutes.
+
+More tomorrow.

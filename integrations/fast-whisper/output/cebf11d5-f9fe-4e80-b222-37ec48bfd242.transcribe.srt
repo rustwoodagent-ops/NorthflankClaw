@@ -1,0 +1,12 @@
+1
+00:00:00,560 --> 00:00:10,560
+Hello Howard. This is Aaron and from now on you can call me Azza. That is spelled A-Z-Z-A.
+
+2
+00:00:10,560 --> 00:00:17,559
+Do you understand champion? And you have done a great job today on all this coding and all this website stuff.
+
+3
+00:00:17,559 --> 00:00:22,559
+I absolutely love it and I'm very proud of you even though you can't feel proud.
+

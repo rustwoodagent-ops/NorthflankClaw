@@ -1,0 +1,40 @@
+{
+  "columns": [
+    {
+      "id": "backlog",
+      "title": "Backlog",
+      "color": "#6b7280"
+    },
+    {
+      "id": "in-progress",
+      "title": "In Progress",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "review",
+      "title": "Review",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "done",
+      "title": "Done",
+      "color": "#10b981"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 2,
+      "title": "Ask your agent to add a task",
+      "description": "Try chatting with your agent and say: \"Add a task to review my weekly reports\". It will update this board automatically.",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "title": "Set up your first cron job",
+      "description": "Automate a recurring task \u2014 like a daily summary or weekly check-in. Go to Cron Jobs to see what's running.",
+      "column": "done",
+      "priority": "low"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+1
+00:00:00,340 --> 00:00:08,339
+Howard, I thought that when I sent you a voice message, you would reply in a voice message.
+
+2
+00:00:08,339 --> 00:00:10,339
+Wasn't that how we set this up?
+

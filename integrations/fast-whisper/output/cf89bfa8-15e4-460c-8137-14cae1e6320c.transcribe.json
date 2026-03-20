@@ -1,0 +1,34 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/cf89bfa8-15e4-460c-8137-14cae1e6320c.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9730461835861206,
+  "duration": 20.1135,
+  "segments": [
+    {
+      "start": 0.21,
+      "end": 4.21,
+      "text": "Excellent. We're just testing the voice message now, Howard."
+    },
+    {
+      "start": 4.21,
+      "end": 8.21,
+      "text": "Now, Howard, I'd like you to send me an email"
+    },
+    {
+      "start": 8.21,
+      "end": 12.21,
+      "text": "and tell me exactly what your protocols are"
+    },
+    {
+      "start": 12.21,
+      "end": 16.21,
+      "text": "and what your goals are, and also reply in"
+    },
+    {
+      "start": 16.21,
+      "end": 20.21,
+      "text": "a voice message please, with confirmation."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/d399eb62-c885-42dc-a9e1-9345233286a8.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.983170211315155,
+  "duration": 6.4935,
+  "segments": [
+    {
+      "start": 0.24,
+      "end": 5.24,
+      "text": "All right, Howard, I expected a reply from that last message."
+    }
+  ]
+}

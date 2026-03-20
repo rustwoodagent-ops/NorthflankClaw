@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/file_4---6f464047-8171-4412-b56d-ff2708104b24.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9658217430114746,
+  "duration": 5.7735,
+  "segments": [
+    {
+      "start": 1.23,
+      "end": 4.79,
+      "text": "Great work champion. I'll talk to you in the morning"
+    }
+  ]
+}

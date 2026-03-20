@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/file_6---ae749879-20ae-4cb3-b1b0-8627dfac75e8.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9735774397850037,
+  "duration": 8.9735,
+  "segments": [
+    {
+      "start": 1.3,
+      "end": 8.3,
+      "text": "Please explain, signed, expiring URLs and gated streaming."
+    }
+  ]
+}

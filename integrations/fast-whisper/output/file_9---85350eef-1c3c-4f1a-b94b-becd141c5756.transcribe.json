@@ -1,0 +1,14 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/file_9---85350eef-1c3c-4f1a-b94b-becd141c5756.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9583288431167603,
+  "duration": 4.5335,
+  "segments": [
+    {
+      "start": 0.18,
+      "end": 3.5,
+      "text": "What's the weather going to be like tomorrow in Sandgate, please?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "openclaw-northflank-wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper server for OpenClaw on Northflank",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy": "^1.18.1"
+  }
+}

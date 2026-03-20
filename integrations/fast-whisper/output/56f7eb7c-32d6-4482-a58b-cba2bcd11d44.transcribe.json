@@ -1,0 +1,19 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/56f7eb7c-32d6-4482-a58b-cba2bcd11d44.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9837682843208313,
+  "duration": 11.4535,
+  "segments": [
+    {
+      "start": 0.34,
+      "end": 8.34,
+      "text": "Howard, I thought that when I sent you a voice message, you would reply in a voice message."
+    },
+    {
+      "start": 8.34,
+      "end": 10.34,
+      "text": "Wasn't that how we set this up?"
+    }
+  ]
+}

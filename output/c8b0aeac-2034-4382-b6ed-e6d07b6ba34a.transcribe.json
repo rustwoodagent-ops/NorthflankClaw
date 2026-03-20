@@ -1,0 +1,29 @@
+{
+  "input": "/home/rustwood/.openclaw/media/inbound/c8b0aeac-2034-4382-b6ed-e6d07b6ba34a.ogg",
+  "task": "transcribe",
+  "language_detected": "en",
+  "language_probability": 0.9818238615989685,
+  "duration": 18.2935,
+  "segments": [
+    {
+      "start": 0.88,
+      "end": 9.4,
+      "text": "Hi Howard, it's Azahir and I'm just excited to see if you can use 11 Labs to reply back"
+    },
+    {
+      "start": 9.4,
+      "end": 10.4,
+      "text": "to me."
+    },
+    {
+      "start": 10.4,
+      "end": 16.12,
+      "text": "You know, tell me a nice little paragraph of the stuff that we've done today because"
+    },
+    {
+      "start": 16.12,
+      "end": 17.0,
+      "text": "I'm proud of you."
+    }
+  ]
+}

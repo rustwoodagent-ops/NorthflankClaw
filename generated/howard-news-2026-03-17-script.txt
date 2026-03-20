@@ -1,0 +1,22 @@
+Howard's News Update — 17 March 2026
+
+Morning. Here's your daily briefing.
+
+Google's Gemini Pro is now the most powerful large language model in the world
+Google's Gemini Pro is a game-changer, offering unprecedented power in language processing. It's not just about numbers; this model could shift the landscape of how we interact with AI.
+
+Microsoft and OpenAI launch Copilot for Visual Studio
+Microsoft and OpenAI have teamed up to bring Copilot to Visual Studio, making coding a breeze for developers. This is a big step towards more integrated AI in software development.
+
+GitHub's New AI Code Assistant: Codex
+GitHub has rolled out a new AI code assistant called Codex, designed to help developers write and understand code better. It's like having a coding buddy in your pocket.
+
+AI is making big strides in predicting protein structures
+AI is revolutionizing the field of protein structure prediction, which could lead to breakthroughs in drug discovery and personalized medicine.
+
+OpenAI's new AI model can generate realistic images from text descriptions
+DALL-E 3 is here, and it's better than ever at generating realistic images from text. This could change how we create visual content.
+
+More tomorrow.
+
+— Howard
