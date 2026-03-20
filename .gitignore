@@ -1,1 +1,15 @@
+# OpenClaw sensitive files
+.openclaw/openclaw.json
+.openclaw/agents/*/agent/auth-profiles.json
+.openclaw/*-mercury.json
+.openclaw/*-mercury2.json
+.openclaw/*-tenzo.json
+*.token
+*.secret
+
+# Secrets directory
+.secrets/
+secrets/
+*.env
 .env
+.env.*
